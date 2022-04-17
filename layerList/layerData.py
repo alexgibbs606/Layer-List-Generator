@@ -22,7 +22,7 @@ class LayerData():
 				if line.startswith('SpecificFactionSetup='):
 					lineList = resplit(r'/|\.|_', line)
 					for posFac in lineList:
-						if posFac.strip() in ['USA', 'RUS', 'RU', 'GB', 'CAF', 'MEA', 'INS', 'MIL']:
+						if posFac.strip() in ['USA', 'RUS', 'RU', 'GB', 'CAF', 'MEA', 'INS', 'MIL', 'AUS', 'ADF']:
 							posFac = 'RUS' if posFac == 'RU' else posFac
 							faction = posFac
 							break
