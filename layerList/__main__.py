@@ -29,12 +29,12 @@ with open(Path('layers.csv'), 'w', encoding='utf-8', newline='\n') as layerFile:
 	writer = csvWriter(layerFile)
 	writer.writerow([
 		'Layer Name',
-		'GameMode',
 		'Level Name',
-		'Faction 1',
-		'Faction 1 Tickets',
-		'Faction 2',
-		'Faction 2 Tickets',
+		'GameMode',
+		'Team 1',
+		'T1 Tickets',
+		'Team 2',
+		'T2 Tickets',
 	])
 	for layer in layerData:
 		writer.writerow(layer.asList())
