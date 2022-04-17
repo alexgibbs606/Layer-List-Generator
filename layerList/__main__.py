@@ -8,7 +8,7 @@ from csv import writer as csvWriter
 from layerData import LayerData
 
 # Iterating through our maps file system
-maps = (Path('Game') / 'Maps').absolute()
+maps = (Path('2.15') / 'game' / 'Maps').absolute()
 layerData = []
 
 # For each map
